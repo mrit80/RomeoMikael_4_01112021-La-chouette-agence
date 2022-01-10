@@ -18,6 +18,48 @@ a:hover {
     cursor: pointer;
 }
 
+h2
+{
+font-weight: 800;
+font-size: 20px;
+text-align: center;
+}
+
+.img-3-4-base
+{
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.label-form
+{
+font-size: 20px;    
+}
+
+.contact-info
+{
+font-size: 15px;
+color: black;
+}
+
+.text-h3
+
+{
+text-transform: initial;
+font-size: 22px;
+text-align: center;
+color: #ffff;
+}
+
+.text-h3-2
+{
+color: #ffffff;
+mix-blend-mode: color-dodge;   
+font-size: 18px;
+text-align: center;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -25,6 +67,11 @@ a:hover {
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+}
+
+.text-center
+{
+font-size: 18px;    
 }
 
 .bloc {
@@ -70,6 +117,22 @@ a:hover {
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
     background-size: auto!important;
+}
+
+.citation-1
+{
+font-size: 25px;
+}
+
+
+.citation-2
+{
+font-size: 18px;
+}
+
+.citation-3
+{
+text-align: -webkit-center;
 }
 
 .bg-repeat {
@@ -119,11 +182,15 @@ a:hover {
     border-color: rgba(255, 255, 255, .2);
 }
 
+.icon-md
+{
+color: #1F1F1F;    
+}
+
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -284,7 +351,8 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+font-size: 32px;
+color: white!important;
 }
 
 .navbar {
@@ -362,7 +430,30 @@ a:hover {
     z-index: 2;
 }
 
+.footer-part
+{
+    color: black;
+    font-size: 20px;
+    margin-left: 10%;   
+}
+
+.li-parts
+{
+color: black;
+}
+
+@media (max-width: 768px) {
+
+    .img-3-4
+    {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    }
+}
+
 @media (min-width: 768px) {
+
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -651,7 +742,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -692,7 +783,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -713,7 +804,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -767,7 +858,8 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+
+    background-color: #ffffff;
 }
 
 .bgc-atomic-tangerine {
@@ -775,12 +867,18 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #F3976C;
+}
+
+.title-page-contact
+{
+color: #1F1F1F;
+font-weight: bold;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #1F1F1F!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -822,7 +920,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +946,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,9 +970,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,10 +980,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
-}
 
 @media (max-width: 767px) {
     .page-container {
